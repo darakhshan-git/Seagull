@@ -1,0 +1,839 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+    font-size: 15px;
+}
+
+.container {
+    max-width: 925px !important;
+}
+
+p {
+    color: #6FA9CB;
+    font-size: 15px;
+}
+
+body {
+    overflow-x: hidden !important;
+    font-family: 'Montserrat' !important;
+    color: #6FA9CB !important;
+}
+
+h4.subtitle {
+    font-size: 17px;
+    color: #6FA9CB;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+h2.maintitle {
+    color: #6FA9CB;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-right: 3px solid #00122F;
+}
+
+.color {
+    color: #00235A !important;
+}
+
+/*====== header css start ======*/
+section.header .tophead {
+    background: #F5F6FB;
+    padding: 15px;
+}
+
+section.header .tophead ul {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+section.header .tophead ul li {
+    list-style: none;
+    color: #6FA9CB;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section.header {
+    background: #00122F;
+    position: relative;
+}
+
+section.header ul.navbar-nav {
+    gap: 30px;
+    padding: 15px 0;
+}
+
+section.header ul.navbar-nav li.nav-item a.nav-link {
+    color: #FEFEFE;
+}
+
+section.header a.navbar-brand {
+    background: #fff;
+    box-shadow: 0px -8px 36px rgb(111 109 113 / 8%);
+    width: 300px;
+    height: 100px;
+    transform: skew(20deg);
+    position: absolute;
+    left: -12px;
+}
+
+section.header a.navbar-brand img {
+    width: 250px;
+    transform: skew(-20deg);
+}
+
+section.header button.signin {
+    background: #6FA9CB;
+    color: #FEFEFE;
+    padding: 10px 20px;
+    border: #6FA9CB;
+}
+/*====== header css end ======*/
+
+
+/*====== banner_slider css start ======*/
+section.banner_slider .bann-slide {
+    max-height: 100%;
+    height: 700px;
+}
+
+section.banner_slider .banner-text {
+    width: 50%;
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 200px 60px;
+}
+
+section.banner_slider .banner-text:after {
+    content: "";
+    position: absolute;
+    background: #000;
+    opacity: 0.5;
+    left: -5%;
+    top: 0;
+    width: 900px;
+    height: 700px;
+    z-index: 9;
+    transform: skew(-15deg);
+    filter: blur(3px);
+}
+
+section.banner_slider .banner-text h1 {
+    z-index: 99999;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+section.banner_slider .banner-text p {
+    color: #F5F5F5;
+    width: 50%;
+    padding: 10px 0;
+}
+
+section.banner_slider button {
+    background: unset;
+    border: 2px solid #FEFEFE;
+    color: #FEFEFE;
+    width: 25%;
+    padding: 10px;
+}
+
+/*====== banner_slider css end ======*/
+
+
+/*====== about css start ======*/
+section.about {
+    padding: 50px 0;
+}
+
+section.about .abtright {
+    padding-top: 20px;
+}
+
+/*====== about css end ======*/
+
+/*====== cards css end ======*/
+section.cards .item {
+    box-shadow: 0px 19px 33px rgb(111 109 113 / 13%);
+    background: #FEFEFE;
+    padding: 30px 30px 0px 30px;
+    border-bottom: 5px solid #00122F;
+    cursor: pointer;
+}
+
+section.cards .item img {
+    width: 40px;
+}
+
+section.cards .item h3 {
+    color: #6FA9CB;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 30px;
+}
+
+section.secCard .item {
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+/*====== cards css end ======*/
+
+/*====== service css start ======*/
+section.service {
+    height: 600px;
+    margin-top: 100px;
+}
+
+section.service .service-text {
+    position: relative;
+    z-index: 9;
+    padding: 70px 0;
+}
+
+section.service .service-text h4 {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+section.service .service-text h2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+section.service .service-text:after {
+    content: "";
+    position: absolute;
+    background: #6FA9CB;
+    left: -49%;
+    top: -50px;
+    width: 900px;
+    height: 650px;
+    z-index: -1;
+    transform: skew(20deg);
+    box-shadow: 0px -8px 36px rgba(111, 109, 113, 0.08);
+}
+
+section.service .service-text button {
+    background: #00122F;
+    color: #FEFEFE;
+    padding: 10px 20px;
+    font-size: 15px;
+        border: #00122F;
+}
+
+section.service .service-text .title h6 {
+    text-transform: uppercase;
+    color: #FEFEFE;
+    font-weight: 600;
+}
+
+section.service .service-text .title p {
+    color: #FEFEFE;
+    width: 50%;
+}
+
+/*====== service css end ======*/
+
+
+
+/*====== logo css start ======*/
+section.logo {
+    background: #00122F;
+    padding: 50px 0;
+}
+/* 
+section.logo .logo-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+section.logo .logo-flex img {
+    width: 200px;
+    filter: invert(60%) sepia(69%) saturate(4%) hue-rotate(26deg) brightness(209%) contrast(109%);
+}
+
+/*====== logo css end ======*/
+
+
+/*====== blog slider css start ======*/
+section.blog_slider {
+    padding: 100px 0px 0 300px;
+}
+
+section.blog_slider .item {
+    box-shadow: 0px 19px 33px rgb(111 109 113 / 13%);
+}
+
+section.blog_slider .owl-stage-outer {
+    padding-bottom: 50px;
+}
+
+section.blog_slider .item h6 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+section.blog_slider .item h5 {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+section.blog_slider .item .text {
+    padding: 20px 30px;
+}
+
+section.blog_slider .item ul {
+    display: flex;
+    padding-left: 0;
+    gap: 30px;
+    margin: 0;
+}
+
+section.blog_slider .item ul li {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+section.blog_slider .item ul li svg {
+    font-size: 20px;
+}
+
+/*====== blog slider css end ======*/
+
+
+/*====== Network css end ======*/
+section.Network {
+    background: #00122F;
+    margin-top: 50px;
+}
+
+section.Network .map {
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: 50% 50% !important;
+}
+
+section.Network .netText {
+    padding: 150px 50px 0 0;
+}
+
+section.Network img {
+    width: 100%;
+    transform: translate(0px, -60px);
+}
+
+/*====== Network css end ======*/
+
+/*====== testimonial css start ======*/
+section.testimonial {
+    padding: 100px 0;
+}
+
+section.testimonial .item {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+section.testimonial .testi-item {
+    display: flex;
+    gap: 20px;
+    background: #00122F;
+    padding: 50px;
+}
+
+section.testimonial .testi-item img {
+    width: 130px;
+}
+
+section.testimonial .testi-item .test-text p {
+    color: #FEFEFE;
+}
+
+section.testimonial .testi-item .test-text h6 {
+    font-weight: 600;
+    color: #FEFEFE;
+    padding-top: 15px;
+}
+
+section.testimonial .owl-dots {
+    position: absolute;
+    top: 73%;
+    left: 85%;
+}
+
+section.testimonial button.owl-dot {
+    padding: 0 !important;
+    font: inherit;
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+    background-color: #FEFEFE;
+}
+
+section.testimonial button.owl-dot.active {
+    background: #FEFEFE !important;
+    width: 30px;
+    height: 8px;
+}
+
+/*====== testimonial css end ======*/
+
+
+/*======  footer css start ======*/
+section.footer {
+    background: #00122F;
+    padding: 100px 0;
+}
+
+section.footer .foot-item h3 {
+    color: #FEFEFE;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+section.footer .foot-item button {
+    background: #FF5E14;
+    color: #FEFEFE;
+    border: #FF5E14;
+    padding: 10px 30px;
+}
+
+section.footer .foot-item ul {
+    margin: 0;
+    padding: 0;
+}
+
+section.footer .foot-item ul li {
+    color: #FEFEFE;
+    list-style: none;
+    padding-bottom: 10px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section.footer .foot-item p {
+    color: #FEFEFE;
+    font-size: 13px;
+}
+
+section.copyright {
+    background: #00122F;
+    padding: 15px 0;
+}
+
+section.copyright .copytext {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.copyright .copytext p {
+    color: #FEFEFE;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+section.copyright .copytext p.compatible {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/*====== footer css end ======*/
+/*=====================/
+    Index page css end
+ /====================*/
+
+
+
+/*===================/
+    About us page css
+ /=================*/
+section.abt-banner .bann-slide .banner-text {
+    margin: auto 0 0 0;
+    padding: 200px 0px 0 0;
+}
+
+section.abt-banner .banner-text:after {
+    transform: skew(20deg);
+    filter: blur(8px);
+    opacity: 0.1;
+    left: -100%;
+}
+
+section.abt-banner .banner-text p {
+    color: #F5F5F5;
+    width: 80%;
+    padding: 10px 0;
+}
+
+section.team {
+    background: #00235A;
+    padding: 50px 0;
+}
+
+section.team h2 {
+    color: #FEFEFE;
+}
+
+section.team h4 {
+    color: #FEFEFE;
+}
+
+section.team p.parah {
+    color: #FEFEFE;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+section.team .person-card {
+    background: #FEFEFE;
+    margin-bottom: 20px;
+}
+
+section.team .person-card img {
+    width: 100%;
+}
+
+section.team .person-card .card-text {
+    padding: 20px 30px;
+}
+
+section.team .person-card .card-text h3 {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+section.abt-content {
+    padding: 100px 0 0 0;
+}
+
+h2.border-org {
+    border-right: 3px solid #FF5E14;
+}
+
+section.secCard .org-border {
+    border-bottom: 5px solid #FF5E14;
+}
+
+
+/*===================/
+    career page css
+ /=================*/
+section.career {
+    padding: 100px 0;
+}
+
+section.career p.parah {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+section.career .career-card {
+    box-shadow: 0px 19px 33px rgb(111 109 113 / 13%);
+    background: #FEFEFE;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+section.career .career-card h5 {
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+section.career .career-card button {
+    background: #FF5E14;
+    color: #FEFEFE;
+    border: unset;
+    padding: 10px 30px;
+}
+
+section.career .career-card ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+}
+
+section.career .career-card ul li {
+    list-style: none;
+    color: #00235A;
+}
+
+.logo-map {
+    background: url(images/map.png);
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 50px;
+}
+
+
+
+
+/*===================/
+    blog page css
+ /=================*/
+section.blog {
+    padding: 100px 0;
+}
+
+section.blog .tube-bann {
+    position: relative;
+}
+
+section.blog .tube-bann img {
+    width: 100%;
+}
+
+section.blog .tube-bann svg {
+    font-size: 100px;
+    color: rgba(254, 254, 254, 0.8);
+    position: absolute;
+    left: 45%;
+    top: 39%;
+}
+
+section.blog .blog-content {
+    padding: 30px 0;
+}
+
+section.blog .blog-card {
+    display: flex;
+    box-shadow: 0px 19px 33px rgb(111 109 113 / 13%);
+    background: #fff;
+    padding: 15px;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+section.blog .blog-card img {
+    width: 100%;
+    height: 250px;
+}
+
+section.blog .blog-card .box-text .descrip {
+    border-bottom: 3px solid #EBE9ED;
+    padding: 20px 0;
+}
+
+section.blog .blog-card .author {
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+section.blog .blog-card .author p {
+    width: 70%;
+}
+
+section.blog .blog-card .author img.writer {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+}
+
+section.blog .blog-card .author svg {
+    font-size: 20px;
+    color: #6F6D71;
+    padding-left: 10px;
+}
+
+.blog-paginatn .pagination {
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.blog-paginatn .pagination .page-item.active .page-link {
+    background-color: #fff;
+    color: #FF5E14;
+}
+
+.blog-paginatn nav ul li .page-link {
+    border: unset;
+}
+
+.blog-paginatn nav ul li a.page-link {
+    color: #6F6D71;
+    font-size: 17px;
+}
+
+.blog-paginatn nav ul li a.page-link:focus {
+    box-shadow: unset;
+}
+
+.blog-paginatn nav ul li a.button {
+    background: #FF5E14;
+    color: #fff;
+    border-radius: unset !important;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+}
+
+
+
+/*===================/
+    blog page css
+ /=================*/
+section.blog-detail .detail-bann img {
+    width: 100%;
+}
+
+section.blog-detail .detail-content {
+    padding: 50px;
+}
+
+section.blog-detail .detail-content p.secparah {
+    padding: 0px 0px 0px 40px;
+    border-left: 3px solid #F64F59;
+    margin: 50px;
+    color: #010101;
+    font-weight: 600;
+}
+
+
+/*===================/
+    service page css
+ /=================*/
+ section.service-page {
+    padding-bottom: 100px;
+ }
+section.service-page .top-content {
+    text-align: center;
+    padding: 50px 0;
+}
+
+section.service-page .top-content svg {
+    color: #FF5E14;
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+section.service-page .top-content h5 {
+    color: #FF5E14;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+section.service-page h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+section.service-page .top-content ul {
+    padding: 10px 0 0;
+    width: 33%;
+    margin: 0 auto;
+}
+section.service-page .top-content ul li {
+    color: #00235A;
+    font-size: 13px;
+}
+section.service-page ul.org-list li {
+    color: #FF5E14;
+    font-size: 13px;
+}
+
+
+/*===================/
+    contact us page css
+ /=================*/
+section.form {
+    padding: 50px 0;
+}
+
+section.form form .form-control {
+    background: #F5F6FB;
+    border: #F5F6FB;
+    padding: 15px 20px;
+}
+
+section.form form .form-control:focus {
+    box-shadow: 0 0 0 0.10rem rgb(255 94 20);
+}
+
+section.form form .form-control::placeholder {
+    color: #6F6D71;
+    font-size: 15px;
+}
+
+section.form form .form-control:focus::placeholder {
+    color: #00235A;
+}
+
+section.form form .icon {
+    transform: translate(400px, -39px);
+    color: #FF5E14;
+}
+
+section.form button {
+    background: #FF5E14;
+    border: #FF5E14;
+    color: #FEFEFE;
+    padding: 15px 50px;
+    margin: 50px auto;
+    display: block;
+}
+
+section.map-location {
+    padding-bottom: 100px;
+}
+
+
+/*===================/
+    404 page css
+ /=================*/
+h3.error-text {
+    color: #FEFEFE !important;
+    z-index: 9999;
+}
+
+p.error-parah {
+    color: #FEFEFE !important;
+    z-index: 9999;
+}
+
+button.home {
+    background: #FF5E14 !important;
+    cursor: pointer;
+}
