@@ -83,7 +83,7 @@
   <!-- header section end -->
 
   <!-- banner_slider section start  -->
-  <section class="banner_slider abt-banner">
+  <section class="banner_slider abt-banner errorpage">
     <div class="bann-slide">
       <div class="container">
         <div class="banner-text">
@@ -103,12 +103,23 @@
   <section class="logo" style="background-color: #FF5E14; padding: 0;">
     <div class="container" style="max-width: 1200px !important;">
       <div class="logo-map" style="background: url(images/map.png);">
-        <div class="logo-flex">
-          <img src="images/logo1.png" />
-          <img src="images/logo2.png" />
-          <img src="images/logo3.png" />
-          <img src="images/logo1.png" />
-          <img src="images/logo2.png" />
+        <div id="logo-demo" class="owl-carousel" style="display: block;">
+          <div class="item">
+            <div class="logo-flex">
+              <img src="images/logo1.png">
+            </div>
+          </div>
+          <div class="item">
+            <div class="logo-flex">
+              <img src="images/logo2.png">
+            </div>
+          </div>
+          <div class="item">
+            <div class="logo-flex">
+              <img src="images/logo3.png">
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -188,26 +199,25 @@
 
 
 
-  <!-- blog-->
+  <!-- logo-->
   <script>
-    $("#blog-demo").owlCarousel({
+    $("#logo-demo").owlCarousel({
       loop: true,
       margin: 20,
       nav: false,
-      // navText: ["<i class='fa-solid fa-caret-left'></i>", "<i class='fa-solid fa-caret-right'></i>"],
       responsiveClass: true,
       responsive: {
         0: {
-          items: 1,
+          items: 3,
           loop: true
         },
         600: {
-          items: 2,
+          items: 3,
           autoplay: true,
           autoplayTimeout: 3000,
         },
         1000: {
-          items: 2.5,
+          items: 6,
         }
       }
     })

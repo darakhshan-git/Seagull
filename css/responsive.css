@@ -2,6 +2,16 @@
 @media (max-width: 768px) {
 
     /* index page */
+    section.header .tophead ul {
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    section.header .tophead ul li {
+        gap: 5px;
+        font-size: 15px;
+    }
+
     section.header a.navbar-brand img {
         width: 150px;
     }
@@ -16,9 +26,13 @@
         font-size: 20px;
     }
 
+    section.banner_slider .banner-text h1 {
+        font-size: 40px;
+    }
+
     section.banner_slider .banner-text {
         width: 100%;
-        padding: 100px 30px;
+        padding: 130px 30px;
     }
 
     section.banner_slider .bann-slide {
@@ -61,29 +75,84 @@
         transform: skew(0deg);
         opacity: 0.4;
     }
-    section.service .service-text .title p{
+
+    section.service .service-text .title p {
         width: 100%;
     }
+
     section.service .container {
         padding: 0;
     }
+
     section.logo .logo-flex img {
         width: 130px;
     }
+
     section.blog_slider {
         padding: 0;
     }
-    section.blog_slider h4{
+
+    section.blog_slider h4 {
         padding: 50px 0 0 30px;
     }
-    section.blog_slider h2{
+
+    section.blog_slider h2 {
         padding-left: 30px;
     }
-    section.blog_slider h2{
+
+    section.blog_slider h2 {
         border: unset;
     }
-    section.career p.parah {
-        width: 100%;
+
+    section.about {
+        padding: 30px 0;
+    }
+
+    section.secCard .item {
+        padding: 30px 20px 0;
+    }
+
+    section.secCard .item h3 {
+        color: #6FA9CB;
+        font-size: 17px;
+    }
+
+    section.Network {
+        padding-bottom: 50px;
+    }
+
+    section.Network .map {
+        background-position: 0% 25% !important;
+    }
+
+    section.Network .netText {
+        padding: 50px 0px 0 0;
+    }
+
+    section.Network img {
+        transform: unset;
+    }
+
+    section.testimonial {
+        padding: 50px 0;
+    }
+
+    section.testimonial .testi-item {
+        gap: 15px;
+        padding: 50px 15px;
+    }
+
+    section.testimonial .testi-item img {
+        width: 100px;
+    }
+
+    section.testimonial .owl-dots {
+        top: 85%;
+        left: 70%;
+    }
+
+    section.testimonial .testi-item .test-text p {
+        font-size: 13px;
     }
 
     section.footer .foot-item h3 {
@@ -98,6 +167,89 @@
     section.copyright .copytext p.compatible {
         gap: 10px;
     }
+
+    section.copyright .copytext p {
+        font-size: 10px;
+    }
+
+    /*  about page */
+    section.abt-banner .bann-slide .banner-text {
+        padding: 130px 30px;
+    }
+
+    section.team p.parah {
+        width: 100%;
+    }
+
+    section.abt-content {
+        padding: 50px 0 0 0;
+    }
+    section.abt-content.pb-5 {
+        padding-bottom: 0 !important;
+    }
+
+    /*  blog page */
+    section.blog {
+        padding: 50px 0;
+    }
+
+    section.blog .blog-card {
+        display: inline-block;
+    }
+
+    section.blog .blog-card img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+
+    section.blog .blog-card .author {
+        gap: 10px;
+    }
+
+    section.blog .blog-card .author p {
+        width: 60%;
+    }
+
+    .blog-paginatn nav ul li a.button {
+        padding: 10px 15px;
+        gap: 7px;
+        font-size: 13px;
+    }
+    section.errorpage .bann-slide{
+        height: 610px;
+    }
+
+    /*  career page */
+    section.career {
+        padding: 50px 0;
+    }
+    section.career p.parah {
+        width: 100%;
+    }
+    section.blog-detail .detail-content {
+        padding: 50px 30px 0;
+    }
+    section.blog-detail .detail-content p.secparah {
+        padding: 0px 0px 0px 20px;
+        margin: 30px 0;
+    }
+    section.blog-detail .detail-bann {
+        padding-top: 0 !important;
+    }
+    section.career .career-card{
+        padding: 30px 20px;
+    }
+    section.career .career-card ul {
+        gap: 20px;
+    }
+    section.career .career-card ul li{
+        font-size: 13px;
+    }
+    section.career .career-card button{
+        padding: 10px 20px;
+    }
+
 
     /*  contact us page */
     section.map-location {
