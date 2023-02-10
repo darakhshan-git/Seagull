@@ -1,6 +1,7 @@
 /*********************************  Responsive Media ***************************************/
 @media (max-width: 768px) {
 
+
     /* index page */
     section.header .tophead ul {
         gap: 20px;
@@ -22,6 +23,31 @@
         left: -10px;
     }
 
+    .header-main {
+        justify-content: right;
+        padding: 10px 20px 10px 0;
+    }
+    .both-header .tophead ul li {
+        font-size: 14px;
+        gap: 5px;
+    }
+    .both-header .tophead ul {
+        justify-content: space-between;
+    }
+    .both-header a.navbar-brand {
+        width: 200px;
+        height: 65px;
+        left: -18px;
+        top: -21%;
+        padding: 10px 5px;
+    }
+    .both-header a.navbar-brand img {
+        width: 200px;
+        transform: skew(-20deg);
+    }
+    .both-header button.signin {
+        display: none;
+    }
     h2.maintitle {
         font-size: 20px;
     }
@@ -184,6 +210,7 @@
     section.abt-content {
         padding: 50px 0 0 0;
     }
+
     section.abt-content.pb-5 {
         padding-bottom: 0 !important;
     }
@@ -216,7 +243,8 @@
         gap: 7px;
         font-size: 13px;
     }
-    section.errorpage .bann-slide{
+
+    section.errorpage .bann-slide {
         height: 610px;
     }
 
@@ -224,29 +252,37 @@
     section.career {
         padding: 50px 0;
     }
+
     section.career p.parah {
         width: 100%;
     }
+
     section.blog-detail .detail-content {
         padding: 50px 30px 0;
     }
+
     section.blog-detail .detail-content p.secparah {
         padding: 0px 0px 0px 20px;
         margin: 30px 0;
     }
+
     section.blog-detail .detail-bann {
         padding-top: 0 !important;
     }
-    section.career .career-card{
+
+    section.career .career-card {
         padding: 30px 20px;
     }
+
     section.career .career-card ul {
         gap: 20px;
     }
-    section.career .career-card ul li{
+
+    section.career .career-card ul li {
         font-size: 13px;
     }
-    section.career .career-card button{
+
+    section.career .career-card button {
         padding: 10px 20px;
     }
 

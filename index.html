@@ -21,10 +21,12 @@
 
 </head>
 
+
+
 <body>
 
-  <!-- header section start -->
-  <section class="header">
+  <!-- header start -->
+  <section class="both-header">
     <div class="tophead">
       <div class="container">
         <ul>
@@ -33,51 +35,61 @@
         </ul>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light pe-5 p-0">
-      <div class="container-fluid ps-0">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/logo.png">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link " href="#">
-                Pages
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="service.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="project.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="career.html">Career</a>
-            </li>
-          </ul>
+    <header class="header">
+        <div class="header-main">
+          <div class="logo">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.png">
+            </a>
+          </div>
+          <div class="open-nav-menu">
+            <span></span>
+          </div>
+          <div class="menu-overlay">
+          </div>
+          <!-- navigation menu start -->
+          <nav class="nav-menu">
+            <div class="close-nav-menu">
+              <i class="fa-solid fa-times"></i>
+            </div>
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu">Pages <i class="plus"></i></a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="about.html">About Us</a></li>
+                  <li class="menu-item"><a href="presence.html">Our Presense</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="service.html">Services</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">Projects</a>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu">Blog <i class="plus"></i></a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="blog.html">Blog Page</a></li>
+                  <li class="menu-item"><a href="blog-detail.html">Blog Detail</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="#">Contact Us</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">Career </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- navigation menu end -->
           <button class="signin">Sign In</button>
         </div>
-      </div>
-    </nav>
+    </header>
   </section>
-  <!-- header section end -->
+  <!-- header end -->
 
   <!-- banner_slider section start  -->
   <section class="banner_slider">
@@ -520,7 +532,8 @@
     <div class="container">
       <div class="copytext">
         <p>Copyright © 2020. All right reserved</p>
-        <p class="compatible">Compatible With: <i class="fa-solid fa-desktop"></i> <i class="fa-solid fa-mobile-screen-button"></i></p>
+        <p class="compatible">Compatible With: <i class="fa-solid fa-desktop"></i> <i
+            class="fa-solid fa-mobile-screen-button"></i></p>
       </div>
     </div>
   </section>
@@ -533,32 +546,32 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
 
 
-
- <!-- logo-->
- <script>
-  $("#logo-demo").owlCarousel({
-    loop: true,
-    margin: 20,
-    nav: false,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-        loop: true
-      },
-      600: {
-        items: 3,
-        autoplay: true,
-        autoplayTimeout: 3000,
-      },
-      1000: {
-        items: 6,
+  <!-- logo-->
+  <script>
+    $("#logo-demo").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          loop: true
+        },
+        600: {
+          items: 3,
+          autoplay: true,
+          autoplayTimeout: 3000,
+        },
+        1000: {
+          items: 6,
+        }
       }
-    }
-  })
-</script>
+    })
+  </script>
 
 
   <!-- blog-->
