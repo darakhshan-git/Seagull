@@ -38,7 +38,7 @@
         width: 200px;
         height: 65px;
         left: -18px;
-        top: -21%;
+        top: -20%;
         padding: 10px 5px;
     }
     .both-header a.navbar-brand img {
@@ -223,7 +223,9 @@
     section.blog .blog-card {
         display: inline-block;
     }
-
+    section.blog .tube-bann svg {
+        font-size: 50px;
+    }
     section.blog .blog-card img {
         width: 100%;
         height: 100%;
@@ -232,18 +234,26 @@
 
     section.blog .blog-card .author {
         gap: 10px;
+        padding: 0;
     }
 
     section.blog .blog-card .author p {
         width: 60%;
+        font-size: 13px;
     }
-
+    section.blog .blog-card .author img.writer {
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 50%;
+    }
     .blog-paginatn nav ul li a.button {
-        padding: 10px 15px;
+        padding: 5px 10px;
         gap: 7px;
         font-size: 13px;
     }
-
+    .blog-paginatn nav ul li a.page-link{
+        font-size: 14px;
+    }
     section.errorpage .bann-slide {
         height: 610px;
     }
