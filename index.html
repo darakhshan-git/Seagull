@@ -56,19 +56,20 @@
             <li class="menu-item">
               <a href="index.html">Home</a>
             </li>
-            <li class="menu-item menu-item-has-children">
+            <!-- <li class="menu-item menu-item-has-children">
               <a href="#" data-toggle="sub-menu">Pages <i class="plus"></i></a>
               <ul class="sub-menu">
                 <li class="menu-item"><a href="about.html">About Us</a></li>
-                <li class="menu-item"><a href="presence.html">Our Presense</a></li>
-                <li class="menu-item"><a href="404.html">404</a></li>
               </ul>
+            </li> -->
+            <li class="menu-item">
+              <a href="about.html">About Us</a>
             </li>
             <li class="menu-item">
               <a href="service.html">Services</a>
             </li>
             <li class="menu-item">
-              <a href="#">Projects</a>
+              <a href="presence.html">Our Presense</a>
             </li>
             <li class="menu-item menu-item-has-children">
               <a href="#" data-toggle="sub-menu">Blog <i class="plus"></i></a>
@@ -80,8 +81,15 @@
             <li class="menu-item">
               <a href="contact.html">Contact Us</a>
             </li>
-            <li class="menu-item">
+            <!-- <li class="menu-item">
               <a href="career.html">Career </a>
+            </li> -->
+            <li class="menu-item menu-item-has-children">
+              <a href="#" data-toggle="sub-menu">Pages <i class="plus"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="career.html">Career</a></li>
+                <li class="menu-item"><a href="job-detail.html">Career Detail</a></li>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -91,6 +99,7 @@
     </header>
   </section>
   <!-- header end -->
+
 
   <!-- banner_slider section start  -->
   <section class="banner_slider">
@@ -102,7 +111,7 @@
               <h1 class="text-white">Your Global <br> Connect</h1>
               <p>We value our relationship with client and embrace
                 the future with an open mind</p>
-              <button>Connect</button>
+              <button>Sign In</button>
             </div>
           </div>
         </div>
@@ -112,7 +121,7 @@
               <h1 class="text-white">Your Global <br> Connect</h1>
               <p>We value our relationship with client and embrace
                 the future with an open mind</p>
-              <button>Connect</button>
+              <button>Sign In</button>
             </div>
           </div>
         </div>
@@ -203,7 +212,7 @@
             <p>Amet minim mollit non deserunt ullamco est sit aliqua minim mollit non.</p>
           </div>
         </div>
-        <button>All Services</button>
+        <button><a href="service.html">All Services</a></button>
       </div>
     </div>
   </section>
@@ -505,11 +514,11 @@
           <div class="foot-item">
             <h3>Userfull Links</h3>
             <ul>
-              <li><i class="fa-solid fa-angle-right"></i><a href="about.html"> About Us</a></li>
-              <li><i class="fa-solid fa-angle-right"></i> <a href=""> Our Team</a></li>
-              <li><i class="fa-solid fa-angle-right"></i><a href=""> Pricing Plans</a> </li>
-              <li><i class="fa-solid fa-angle-right"></i> <a href="blog.html"> Blog</a></li>
-              <li><i class="fa-solid fa-angle-right"></i><a href="404.html"> 404 Page</a> </li>
+              <li><i class="fa-solid fa-angle-right"></i> About Us</li>
+              <li><i class="fa-solid fa-angle-right"></i> Services</li>
+              <li><i class="fa-solid fa-angle-right"></i> Our Team</li>
+              <li><i class="fa-solid fa-angle-right"></i> Pricing Plans</li>
+              <li><i class="fa-solid fa-angle-right"></i> Blog</li>
             </ul>
           </div>
         </div>
@@ -580,8 +589,8 @@
     $("#blog-demo").owlCarousel({
       loop: true,
       margin: 20,
-      nav: false,
-      // navText: ["<i class='fa-solid fa-caret-left'></i>", "<i class='fa-solid fa-caret-right'></i>"],
+      nav: true,
+      navText: ["<i class='fa-solid fa-caret-left'></i>", "<i class='fa-solid fa-caret-right'></i>"],
       responsiveClass: true,
       responsive: {
         0: {
