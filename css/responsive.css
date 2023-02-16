@@ -27,13 +27,16 @@
         justify-content: right;
         padding: 10px 20px 10px 0;
     }
+
     .both-header .tophead ul li {
         font-size: 14px;
         gap: 5px;
     }
+
     .both-header .tophead ul {
         justify-content: space-between;
     }
+
     .both-header a.navbar-brand {
         width: 200px;
         height: 65px;
@@ -41,13 +44,16 @@
         top: -20%;
         padding: 10px 5px;
     }
+
     .both-header a.navbar-brand img {
         width: 200px;
         transform: skew(-20deg);
     }
+
     .both-header button.signin {
         display: none;
     }
+
     h2.maintitle {
         font-size: 20px;
     }
@@ -63,7 +69,6 @@
 
     section.banner_slider .bann-slide {
         max-height: 100%;
-        height: 500px;
         background-position: 50% 50% !important;
     }
 
@@ -72,19 +77,19 @@
         width: 100%;
         opacity: 0.6;
         transform: skew(0deg);
-        filter: blur(0px);
-        height: 500px;
+        /* filter: blur(0px); */
     }
-    section.abt-banner .banner-text:after {
+
+    /* section.abt-banner .banner-text:after {
         filter: blur(15px) !important;
         opacity: 0.5 !important;
-    }
+    } */
     section.banner_slider .banner-text p {
         width: 100%;
     }
 
     section.banner_slider button {
-        width: 50%;
+        width: 50% !important;
     }
 
     section.cards .item {
@@ -206,8 +211,16 @@
     }
 
     /*  about page */
+    section.abt-banner .container {
+        padding: 0;
+    }
+
     section.abt-banner .bann-slide .banner-text {
         padding: 130px 30px;
+    }
+
+    section.abt-banner .bann-slide .banner-text button {
+        width: 50% !important;
     }
 
     section.team p.parah {
@@ -230,9 +243,11 @@
     section.blog .blog-card {
         display: inline-block;
     }
+
     section.blog .tube-bann svg {
         font-size: 50px;
     }
+
     section.blog .blog-card img {
         width: 100%;
         height: 100%;
@@ -248,19 +263,23 @@
         width: 60%;
         font-size: 13px;
     }
+
     section.blog .blog-card .author img.writer {
         width: 40px !important;
         height: 40px !important;
         border-radius: 50%;
     }
+
     .blog-paginatn nav ul li a.button {
         padding: 5px 10px;
         gap: 7px;
         font-size: 13px;
     }
-    .blog-paginatn nav ul li a.page-link{
+
+    .blog-paginatn nav ul li a.page-link {
         font-size: 14px;
     }
+
     section.errorpage .bann-slide {
         height: 610px;
     }
@@ -303,6 +322,21 @@
         padding: 10px 20px;
     }
 
+    /*  job details page */
+    .detail-page .heading {
+        justify-content: space-between;
+        display: block !important;
+    }
+    .detail-page .heading .left h2 {
+        font-size: 20px;
+    }
+    .detail-page .heading .right{
+        padding-top: 30px;
+    }
+    .detail-page .leftside h2{
+        font-size: 20px;
+    }
+
 
     /*  contact us page */
     section.map-location {
@@ -313,6 +347,7 @@
         transform: translate(330px, -39px);
         color: #FF5E14;
     }
+
 
 
 }
