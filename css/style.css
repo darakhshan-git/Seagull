@@ -60,12 +60,28 @@ h2.maintitle {
     align-items: center;
 }
 
+.both-header .tophead ul.socials {
+    gap: 20px;
+}
+.both-header .tophead ul.socials li svg {
+    font-size: 20px;
+}
+.both-header .tophead ul.socials li{
+    cursor: pointer;
+}
 .both-header .tophead ul li {
     list-style: none;
-    color: #6FA9CB;
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.both-header .tophead ul li a{
+    color: #6FA9CB;
+}
+.both-header .tophead .connect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* 
@@ -106,7 +122,6 @@ h2.maintitle {
     color: #FEFEFE;
     padding: 10px 20px;
     border: #6FA9CB;
-    display: none;
 }
 
 /* .header{
@@ -120,7 +135,7 @@ h2.maintitle {
 .header-main {
     background-color: #00122F;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 50px 10px 0;
     position: relative;
@@ -421,6 +436,7 @@ section.banner_slider .banner-text p {
     color: #fff;
     width: 50%;
     padding: 10px 0;
+    z-index: 10;
 }
 
 section.banner_slider button {
@@ -429,6 +445,7 @@ section.banner_slider button {
     color: #00122F;
     width: 20%;
     padding: 10px;
+    z-index: 10;
 }
 
 /*====== banner_slider css end ======*/
@@ -445,6 +462,7 @@ section.about .abtright {
 
 section.abt-banner .bann-slide .banner-text button {
     width: 25%;
+    cursor: pointer;
 }
 
 /*====== about css end ======*/
@@ -584,6 +602,7 @@ section.logo .logo-flex {
 section.logo .logo-flex img {
     width: 200px;
     filter: invert(60%) sepia(69%) saturate(4%) hue-rotate(26deg) brightness(209%) contrast(109%);
+    cursor: pointer;
 }
 
 /*====== logo css end ======*/
@@ -669,7 +688,7 @@ section.blog_slider button svg {
 /*====== Network css end ======*/
 section.Network {
     background: #00122F;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 section.Network .map {
@@ -682,12 +701,50 @@ section.Network .netText {
     padding: 150px 50px 0 0;
 }
 
-section.Network img {
+section.Network .query-form {
     width: 100%;
+    background-color: #fff;
     transform: translate(0px, -60px);
+    box-shadow: 0px 19px 33px rgb(111 109 113 / 13%);
+    padding: 40px;
+    border-radius: 10px;
 }
 
+section.Network .query-form form h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+section.Network .query-form form label {
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+/* section.Network .query-form form .form-control{
+    padding: 10px;
+    border-radius: 8px;
+} */
+section.Network .query-form form .form-control::placeholder{
+    font-size: 13px;
+    color: #ccc;
+}
+section.Network .query-form form .form-control:focus {
+    box-shadow: 0 0 0 0.1rem rgb(0 18 47);
+}
+section.Network .query-form form button{
+    background: #00122F;
+    padding: 10px 30px;
+    font-size: 15px;
+    border: #00122F;
+    border-radius: 7px;
+    width: 100%;
+}
+section.Network .query-form form button a{
+    color: #fff;
+}
 /*====== Network css end ======*/
+
+
 
 /*====== testimonial css start ======*/
 section.testimonial {
@@ -761,8 +818,14 @@ section.footer .foot-item h3 {
 section.footer .foot-item button {
     background: #FF5E14;
     color: #FEFEFE;
-    border: #FF5E14;
+    border: 1px solid #FF5E14;
     padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+section.footer .foot-item button:hover {
+    border: 1px solid #FF5E14;
+    background-color: transparent;
 }
 
 section.footer .foot-item ul {
@@ -783,6 +846,11 @@ section.footer .foot-item ul li {
 section.footer .foot-item ul li a {
     color: #FEFEFE;
     font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+section.footer .foot-item ul li a:hover {
+    color: #FF5E14;
 }
 
 section.footer .foot-item p {
@@ -794,7 +862,9 @@ section.footer .foot-item p a {
     color: #FEFEFE;
     font-size: 13px;
 }
-
+section.footer .foot-item img{
+    width: 100%;
+}
 section.copyright {
     background: #00122F;
     padding: 15px 0;
@@ -886,7 +956,18 @@ section.team .person-card .card-text h3 {
     font-size: 17px;
     font-weight: 600;
 }
-
+section.team button {
+    background: #00122F;
+    padding: 15px 40px;
+    font-size: 15px;
+    border: #00122F;
+    margin: 40px auto 0;
+    display: block;
+    border-radius: 8px;
+}
+section.team button a{
+    color: #fff;
+}
 section.abt-content {
     padding: 100px 0 0 0;
 }
@@ -1167,7 +1248,7 @@ section.form form .form-control:focus::placeholder {
 }
 
 section.form form .icon {
-    transform: translate(400px, -39px);
+    transform: translate(860px, -39px);
     color: #FF5E14;
 }
 
@@ -1213,6 +1294,7 @@ section.map-location {
 .detail-page .heading {
     justify-content: space-between;
 }
+
 .detail-page .heading .left h2 {
     font-size: 25px;
     font-weight: 600;
@@ -1281,11 +1363,13 @@ section.map-location {
     border-radius: 10px;
     margin-bottom: 40px;
 }
+
 .detail-page .rigthside .top .flex {
     display: flex;
     gap: 10px;
     padding-bottom: 20px;
 }
+
 .detail-page .rigthside .top .flex span {
     background: #9A9A9A;
     width: 30px;
@@ -1294,38 +1378,51 @@ section.map-location {
     text-align: center;
     line-height: 31px;
 }
+
 .detail-page .rigthside .top h5 {
     color: #000;
 }
-.detail-page .rigthside .top .flex span svg{
+
+.detail-page .rigthside .top .flex span svg {
     color: #000;
 }
+
 .detail-page .rigthside .top .flex .text h6 {
     color: #000;
     margin: 0;
     /* font-weight: 600; */
 }
+
 .detail-page .rigthside .bottom {
     border: 1px solid #9A9A9A;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 40px;
 }
+
 .detail-page .rigthside .bottom h5 {
     color: #000;
     padding-bottom: 15px;
 }
+
 .detail-page .rigthside .bottom p.job-desc {
     color: #000;
     font-size: 15px;
     margin: 0;
 }
+
 .detail-page .rigthside .bottom span {
     color: #6FA9CB;
     font-size: 15px;
     padding-bottom: 20px;
     display: inline-block;
 }
+
+.detail-page .heading .right button svg {
+    margin-left: 5px;
+}
+
+
 
 /*===================/
     404 page css

@@ -26,14 +26,22 @@
 
 <body>
 
-  <!-- header start -->
-  <section class="both-header">
+   <!-- header start -->
+   <section class="both-header">
     <div class="tophead">
       <div class="container">
-        <ul>
-          <li> <i class="fa-solid fa-envelope-open-text"></i> youremail@gmail.com</li>
-          <li> <i class="fa-solid fa-mobile-screen"></i> (671) 555-0110</li>
-        </ul>
+        <div class="connect">
+          <ul>
+            <li> <i class="fa-solid fa-envelope-open-text"></i> youremail@gmail.com</li>
+            <li> <i class="fa-solid fa-mobile-screen"></i> (671) 555-0110</li>
+          </ul>
+          <ul class="socials">
+            <li> <i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li> <i class="fa-brands fa-instagram"></i> </li>
+            <li><i class="fa-brands fa-linkedin"></i> </li>
+          </ul>
+        </div>
       </div>
     </div>
     <header class="header">
@@ -70,14 +78,7 @@
               <a href="service.html">Services</a>
             </li>
             <li class="menu-item">
-              <a href="presence.html">Our Presense</a>
-            </li>
-            <li class="menu-item menu-item-has-children">
-              <a href="#" data-toggle="sub-menu">Blog <i class="plus"></i></a>
-              <ul class="sub-menu">
-                <li class="menu-item"><a href="blog.html">Blog Page</a></li>
-                <li class="menu-item"><a href="blog-detail.html">Blog Detail</a></li>
-              </ul>
+              <a href="blog.html">Blog</a>
             </li>
             <li class="menu-item">
               <a href="contact.html">Contact Us</a>
@@ -85,13 +86,13 @@
             <!-- <li class="menu-item">
               <a href="career.html">Career </a>
             </li> -->
-            <li class="menu-item menu-item-has-children">
+            <!-- <li class="menu-item menu-item-has-children">
               <a href="#" data-toggle="sub-menu">Pages <i class="plus"></i></a>
               <ul class="sub-menu">
                 <li class="menu-item"><a href="career.html">Career</a></li>
                 <li class="menu-item"><a href="job-detail.html">Career Detail</a></li>
               </ul>
-            </li>
+            </li> -->
           </ul>
         </nav>
         <!-- navigation menu end -->
@@ -200,47 +201,34 @@
 
 
 
-  <!-- /* footer section start */ -->
-  <section class="footer">
+   <!-- /* footer section start */ -->
+   <section class="footer">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
           <div class="foot-item">
-            <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, incididunt ut labore.</p>
-            <button>Join Us</button>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="foot-item">
             <h3>Contact Us</h3>
             <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
-            <p>deanna.curtis@example.com</p>
-            <h3>Opening Hours</h3>
-            <p>Mon - Sat 8:00 - 17:30,</p>
-            <p>Sunday - CLOSED</p>
+            <p><a href="mailto: deanna.curtis@example.com">deanna.curtis@example.com</a></p>
           </div>
         </div>
+
         <div class="col-md-3">
           <div class="foot-item">
-            <h3>Userfull Links</h3>
+            <h3>Quick Links</h3>
             <ul>
-              <li><i class="fa-solid fa-angle-right"></i> About Us</li>
-              <li><i class="fa-solid fa-angle-right"></i> Services</li>
-              <li><i class="fa-solid fa-angle-right"></i> Our Team</li>
-              <li><i class="fa-solid fa-angle-right"></i> Pricing Plans</li>
-              <li><i class="fa-solid fa-angle-right"></i> Blog</li>
+              <li><i class="fa-solid fa-angle-right"></i> <a href="about.html">About Us </a></li>
+              <li><i class="fa-solid fa-angle-right"></i> <a href="service.html">Services </a></li>
+              <li><i class="fa-solid fa-angle-right"></i> <a href="#.html">Our Team</a></li>
+              <li><i class="fa-solid fa-angle-right"></i> <a href="#.html">Privacy & Policy </a></li>
+              <li><i class="fa-solid fa-angle-right"></i><a href="#.html"> Terms & Conditions </a></li>
             </ul>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
           <div class="foot-item">
-            <h3>Our Presence</h3>
-            <!-- <img src="images/map.png" /> -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.253462804082!2d-95.40884358504879!3d29.770311681982882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c0b2dbc150fb%3A0x8d7660bc65ed9511!2s4517%20Washington%20Ave%2C%20Manchester%2C%20KY%2039495%2C%20USA!5e0!3m2!1sen!2sin!4v1675841665824!5m2!1sen!2sin"
-              width="100%" height="100" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3>Affiliations </h3>
+            <img src="images/footer.png" />
           </div>
         </div>
       </div><!-- row end-->
@@ -269,32 +257,6 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/script.js"></script>
 
-
-
-  <!-- blog-->
-  <script>
-    $("#blog-demo").owlCarousel({
-      loop: true,
-      margin: 20,
-      nav: false,
-      // navText: ["<i class='fa-solid fa-caret-left'></i>", "<i class='fa-solid fa-caret-right'></i>"],
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 1.2,
-          loop: true
-        },
-        600: {
-          items: 1.2,
-          autoplay: true,
-          autoplayTimeout: 3000,
-        },
-        1000: {
-          items: 2.5,
-        }
-      }
-    })
-  </script>
 
 
 </body>

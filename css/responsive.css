@@ -69,7 +69,6 @@
 
     section.banner_slider .bann-slide {
         max-height: 100%;
-        background-position: 50% 50% !important;
     }
 
     section.banner_slider .banner-text:after {
@@ -141,7 +140,12 @@
     section.blog_slider h2 {
         border: unset;
     }
-
+    section.blog_slider button.owl-prev {
+        transform: translate(0px, -220px);
+    }
+    section.blog_slider button.owl-next{
+        transform: translate(0px, -220px);
+    }
     section.about {
         padding: 30px 0;
     }
@@ -335,6 +339,15 @@
     }
     .detail-page .leftside h2{
         font-size: 20px;
+    }
+    .detail-page .profile img.logo {
+        transform: translate(40px, -40px);
+        width: 70px;
+        height: 70px;
+    }
+    .detail-page .heading .right button svg {
+        font-size: 13px;
+        margin-left: 5px;
     }
 
 
