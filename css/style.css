@@ -52,7 +52,7 @@ h2.maintitle {
     padding: 15px;
 }
 .both-header .tophead .container{
-    max-width: 1390px !important;
+    max-width: 1400px !important;
 }
 .both-header .tophead ul {
     display: flex;
@@ -156,7 +156,7 @@ section.both-header .header nav.nav-menu{
 
 .header .menu>.menu-item {
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 40px;
     position: relative;
 }
 
