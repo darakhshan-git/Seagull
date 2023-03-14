@@ -51,11 +51,13 @@ h2.maintitle {
     background: #F5F6FB;
     padding: 15px;
 }
-
+.both-header .tophead .container{
+    max-width: 1390px !important;
+}
 .both-header .tophead ul {
     display: flex;
     gap: 30px;
-    margin: 0;
+    margin: 0 0 0 220px;
     padding: 0;
     align-items: center;
 }
@@ -102,14 +104,16 @@ h2.maintitle {
 .both-header a.navbar-brand {
     background: #fff;
     box-shadow: 0px -8px 36px rgb(111 109 113 / 8%);
-    width: 325px;
+    width: 300px;
     height: 85px;
     transform: skew(20deg);
     position: absolute;
-    left: -18px;
-    top: -23%;
+    left: -17px;
+    bottom: -34px;
 }
-
+section.both-header .header nav.nav-menu{
+    width: 60%;
+}
 .both-header a.navbar-brand img {
     width: 250px;
     transform: skew(-20deg);
@@ -135,14 +139,14 @@ h2.maintitle {
 .header-main {
     background-color: #00122F;
     display: flex;
-    justify-content: space-between;
+    gap: 150px;
     align-items: center;
     padding: 10px 50px 10px 0;
-    position: relative;
 }
 
 .header .logo {
     padding: 0 15px;
+    position: relative;
 }
 
 .header .nav-menu ul {
@@ -389,6 +393,7 @@ h2.maintitle {
     .header .close-nav-menu,
     .header .open-nav-menu {
         display: flex;
+        margin-right: 0;
     }
 }
 
@@ -526,7 +531,7 @@ section.secCard .item {
 /*====== service css start ======*/
 section.service {
     height: 600px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 section.service .service-text {
@@ -688,7 +693,8 @@ section.blog_slider button svg {
 /*====== Network css end ======*/
 section.Network {
     background: #00122F;
-    margin-top: 100px;
+    margin-top: 50px;
+    padding: 50px 0;
 }
 
 section.Network .map {
@@ -704,7 +710,6 @@ section.Network .netText {
 section.Network .query-form {
     width: 100%;
     background-color: #fff;
-    transform: translate(0px, -60px);
     box-shadow: 0px 19px 33px rgb(111 109 113 / 13%);
     padding: 40px;
     border-radius: 10px;

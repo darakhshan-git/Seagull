@@ -1,7 +1,9 @@
 /*********************************  Responsive Media ***************************************/
 @media (max-width: 768px) {
 
-
+    .both-header .tophead{
+        display: none;
+    }
     /* index page */
     section.header .tophead ul {
         gap: 20px;
@@ -24,8 +26,9 @@
     }
 
     .header-main {
-        justify-content: right;
+        /* justify-content: right; */
         padding: 10px 20px 10px 0;
+        gap: 300px;
     }
 
     .both-header .tophead ul li {
@@ -41,12 +44,11 @@
         width: 200px;
         height: 65px;
         left: -18px;
-        top: -20%;
         padding: 10px 5px;
     }
 
     .both-header a.navbar-brand img {
-        width: 200px;
+        width: 160px;
         transform: skew(-20deg);
     }
 
